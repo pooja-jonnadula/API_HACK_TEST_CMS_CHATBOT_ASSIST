@@ -57,13 +57,10 @@ public class ChatBotAssistDaoImpl implements ChatBotAssistDao {
 
 	private HashMap<String, AuthRequest> fetchUserData() {
 		try {
-			log.debug("env.getProperty(\"UID1\"):"+env.getProperty("UID1")+","+env.getProperty("UID2")+","+env.getProperty("UID3"));
-			log.debug("env.getProperty(\"UID1\"):"+env.getProperty("UPWD1")+","+env.getProperty("UPWD2")+","+env.getProperty("UPWD3"));
-			log.debug("env.getProperty(\"UID1\"):"+env.getProperty("CPU")+","+env.getProperty("CCU")+","+env.getProperty("BKU"));
 			userDataMap.put(env.getProperty("UID1"), new AuthRequest(env.getProperty("UID1"), env.getProperty("UPWD1"), env.getProperty("BKU")));
 			userDataMap.put(env.getProperty("UID2"), new AuthRequest(env.getProperty("UID2"), env.getProperty("UPWD2"), env.getProperty("CCU")));
 			userDataMap.put(env.getProperty("UID3"), new AuthRequest(env.getProperty("UID3"), env.getProperty("UPWD3"), env.getProperty("CPU")));
-			log.debug("user,MAP->"+userDataMap);
+			log.debug("user,MAP->{}",userDataMap);
 		} catch (Exception e) {
 			log.debug("Exception :", e);
 			log.debug("Error :", e);
