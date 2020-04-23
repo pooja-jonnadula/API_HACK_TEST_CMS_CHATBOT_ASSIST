@@ -5,10 +5,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fss.cms.chatbot.assist.prototype.model.AssistRequest;
+import com.fss.cms.chatbot.assist.prototype.model.AssistResponse;
 import com.fss.cms.chatbot.assist.prototype.model.AuthRequest;
 import com.fss.cms.chatbot.assist.prototype.model.AuthResponse;
 import com.fss.cms.chatbot.assist.prototype.service.ChatBotAssistService;
@@ -35,7 +35,6 @@ public class ChatBotAssistController {
 	}
 	@ApiOperation("Assist API allows users to access CMS Assist for requested operation details with Token generated from Auth API")
 	@PostMapping(value = "${ASSIST-API-URL}", produces = "application/json", consumes = "application/json")
-	@ResponseBody
 	AssistResponse assistCMSUsersHandler(@RequestBody AssistRequest assistRequest) {
 
 		log.info("-User assist API-");

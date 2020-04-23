@@ -8,15 +8,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fss.cms.chatbot.assist.prototype.controller.AssistResponse;
 import com.fss.cms.chatbot.assist.prototype.dao.ChatBotAssistDao;
 import com.fss.cms.chatbot.assist.prototype.model.AssistRequest;
+import com.fss.cms.chatbot.assist.prototype.model.AssistResponse;
 import com.fss.cms.chatbot.assist.prototype.model.AuthRequest;
 import com.fss.cms.chatbot.assist.prototype.model.AuthResponse;
 import com.fss.cms.chatbot.assist.prototype.model.UserOperations;
 import com.fss.cms.chatbot.assist.prototype.model.UserTokenData;
-
-import ch.qos.logback.core.subst.Token;
 
 @Service("chatBotAssistService")
 public class ChatBotAssistService {

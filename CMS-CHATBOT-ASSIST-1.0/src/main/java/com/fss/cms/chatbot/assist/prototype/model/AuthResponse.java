@@ -4,12 +4,6 @@ import java.util.List;
 
 import io.swagger.annotations.ApiModelProperty;
 
-/*import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-@Setter
-@Getter
-@ToString*/
 public class AuthResponse {
 	@ApiModelProperty(notes = "User Token access CMS Assist")
 	String token;

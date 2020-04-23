@@ -2,15 +2,7 @@ package com.fss.cms.chatbot.assist.prototype.model;
 
 import io.swagger.annotations.ApiModelProperty;
 
-/*import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
-@Setter
-@Getter
-@ToString
-@Data*/
 public class AuthRequest {
 	@ApiModelProperty(notes = "User ID to login CMS Assist", allowableValues = "500002,500003,500004")
 	String userID;

@@ -28,5 +28,5 @@ public class AssistRequest {
 		this.userToken = userToken;
 		this.operationID = operationID;
 	}
-	
+	public AssistRequest() {}
 }

@@ -11,8 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 
-import com.fss.cms.chatbot.assist.prototype.controller.AssistResponse;
+import com.fss.cms.chatbot.assist.prototype.model.AssistResponse;
 import com.fss.cms.chatbot.assist.prototype.model.AuthRequest;
+import com.fss.cms.chatbot.assist.prototype.model.UserOperationDetails;
 import com.fss.cms.chatbot.assist.prototype.model.UserOperations;
 import com.fss.cms.chatbot.assist.prototype.model.UserTokenData;
 

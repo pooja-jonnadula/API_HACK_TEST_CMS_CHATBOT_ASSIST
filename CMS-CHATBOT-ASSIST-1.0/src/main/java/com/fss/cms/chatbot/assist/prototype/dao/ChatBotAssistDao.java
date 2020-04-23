@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.fss.cms.chatbot.assist.prototype.controller.AssistResponse;
+import com.fss.cms.chatbot.assist.prototype.model.AssistResponse;
 import com.fss.cms.chatbot.assist.prototype.model.AuthRequest;
 import com.fss.cms.chatbot.assist.prototype.model.UserOperations;
 import com.fss.cms.chatbot.assist.prototype.model.UserTokenData;
